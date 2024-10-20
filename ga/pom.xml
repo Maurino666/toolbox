@@ -13,6 +13,7 @@
         <module>core</module>
         <module>binary-square</module>
         <module>eight-queens</module>
+        <module>hello-world</module>
     </modules>
 
 

@@ -73,13 +73,20 @@ public abstract class CrossoverOperator<T extends Individual> extends GeneticOpe
         return crossoverProbability;
     }
 
-    class Pairing {
+    protected class Pairing {
         protected final T firstIndividual;
         protected final T secondIndividual;
 
         protected Pairing(T firstIndividual, T secondIndividual) {
             this.firstIndividual = firstIndividual;
             this.secondIndividual = secondIndividual;
+        }
+
+        public T getFirstIndividual() {
+            return firstIndividual;
+        }
+        public T getSecondIndividual(){
+            return secondIndividual;
         }
     }
 }

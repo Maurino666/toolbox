@@ -6,7 +6,7 @@ import it.unisa.ga.population.Population;
 import java.util.Random;
 
 public abstract class GeneticOperator<T extends Individual> {
-    private final Random random;
+    protected final Random random;
 
     public abstract Population<T> apply(Population<T> population) throws CloneNotSupportedException;
 
